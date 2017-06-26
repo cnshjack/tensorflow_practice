@@ -48,7 +48,7 @@ def prediction(time_step=5):
         acc=np.average(np.abs(test_predict-test_y[:len(test_predict)])/test_y[:len(test_predict)])
         avg_diff=np.average(np.abs(test_predict-test_y[:len(test_predict)]))
 
-        print ("avg_diff=",avg_diff+", acc=",acc)
+        print ("avg_diff=",avg_diff,", acc=",acc)
 
         plt.figure()
 
